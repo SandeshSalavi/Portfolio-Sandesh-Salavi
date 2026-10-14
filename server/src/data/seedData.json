@@ -1,0 +1,157 @@
+{
+  "profile": {
+    "name": "Sandesh Salavi",
+    "headline": "Building Intelligent Solutions with AI & Software Engineering",
+    "roleTitle": "Aspiring AI Engineer | Software Developer",
+    "heroSupportingText": "I'm an aspiring AI Engineer and Software Developer interested in machine learning, deep learning, generative AI, and full-stack application development.",
+    "about": "I am pursuing a B.E./B.Tech degree at KIT College of Engineering, with an expected graduation year of 2027. My technical interests span AI engineering, machine learning, deep learning, Large Language Models, Retrieval-Augmented Generation, and full-stack software development.\n\nI enjoy exploring how AI models and software systems can be combined to build practical applications. My portfolio highlights my learning and project work across AI and software development.",
+    "email": "sandeshsalavi3@gmail.com",
+    "github": "https://github.com/SandeshSalavi",
+    "linkedin": {
+      "username": "SandeshSalavi",
+      "url": "https://linkedin.com/in/SandeshSalavi-placeholder",
+      "isVerified": false,
+      "placeholderNote": "Placeholder: Verify and update full LinkedIn profile URL in portfolioData.js"
+    },
+    "resume": {
+      "fileName": "resume.pdf",
+      "isAvailable": false,
+      "filePath": "/resume.pdf",
+      "placeholderNote": "Upload your verified resume.pdf to client/public/resume.pdf to enable direct download"
+    },
+    "targetRoles": [
+      "AI Engineer",
+      "Machine Learning Engineer",
+      "Software Developer",
+      "AI-focused Full-Stack Developer"
+    ]
+  },
+  "education": {
+    "institution": "KIT College of Engineering",
+    "degree": "B.E./B.Tech",
+    "expectedGraduation": "2027",
+    "branch": "[Placeholder: e.g., Computer Science and Engineering / Artificial Intelligence]",
+    "startYear": "[Placeholder: e.g., 2023]",
+    "coursework": [
+      "[Placeholder: Data Structures & Algorithms]",
+      "[Placeholder: Database Management Systems]",
+      "[Placeholder: Machine Learning Foundations]",
+      "[Placeholder: Object-Oriented Programming]",
+      "[Placeholder: Computer Networks & Operating Systems]"
+    ],
+    "grades": "[Placeholder: Add CGPA / Percentage when semester grades are finalized]",
+    "academicAchievements": [
+      "[Placeholder: Add verified academic milestones, Dean's list, or department honors]"
+    ]
+  },
+  "skills": {
+    "Programming": [
+      { "name": "Python", "category": "Programming" },
+      { "name": "Java", "category": "Programming" },
+      { "name": "SQL", "category": "Programming" }
+    ],
+    "AI and machine learning": [
+      { "name": "Machine Learning", "category": "AI and machine learning" },
+      { "name": "Deep Learning", "category": "AI and machine learning" },
+      { "name": "PyTorch", "category": "AI and machine learning" },
+      { "name": "XGBoost", "category": "AI and machine learning" },
+      { "name": "OpenCV", "category": "AI and machine learning" }
+    ],
+    "Generative AI": [
+      { "name": "Large Language Models (LLMs)", "category": "Generative AI" },
+      { "name": "Retrieval-Augmented Generation (RAG)", "category": "Generative AI" }
+    ],
+    "Web and backend development": [
+      { "name": "React.js", "category": "Web and backend development" },
+      { "name": "Node.js", "category": "Web and backend development" },
+      { "name": "MongoDB", "category": "Web and backend development" },
+      { "name": "REST APIs", "category": "Web and backend development" },
+      { "name": "JWT authentication", "category": "Web and backend development" }
+    ]
+  },
+  "projects": [
+    {
+      "id": "neurostage",
+      "title": "NeuroStage",
+      "category": "AI / Machine Learning",
+      "statusTag": "Research Prototype",
+      "isClinical": false,
+      "disclaimer": "Research prototype — Not a clinically certified diagnostic system. Designed for experimental and academic exploration only.",
+      "shortDescription": "An AI-focused project involving sleep-related EEG data and machine-learning-based analysis.",
+      "visualTheme": "neuroscience",
+      "editableFields": {
+        "problemStatement": "[Editable Placeholder: Describe the sleep stage classification challenge, EEG polysomnography complexity, and the need for automated signal processing.]",
+        "myContribution": "[Editable Placeholder: Detail your specific engineering contributions, such as data pipeline development, signal filtering, epoch extraction, and model experimentation.]",
+        "datasetAndPreprocessing": "[Editable Placeholder: Specify EEG dataset used (e.g. Sleep-EDF Database Expanded), bandpass filtering frequencies (0.5–35 Hz), artifact rejection, and window epoching methods.]",
+        "modelArchitecture": "[Editable Placeholder: Describe neural network topology (e.g. 1D-CNN feature extractors, BiLSTM temporal aggregators, or feature-engineered XGBoost classifier).]",
+        "trainingAndEvaluation": "[Editable Placeholder: Specify cross-validation scheme (e.g. 5-fold Subject-wise CV), loss function, learning rate scheduler, and evaluation criteria.]",
+        "results": "[Editable Placeholder: Pending finalized experimental validation benchmarks and peer review.]",
+        "limitations": "Research prototype — Not a clinically certified diagnostic system. Evaluation is limited to public benchmarks under non-clinical conditions.",
+        "github": {
+          "url": "",
+          "placeholder": "https://github.com/SandeshSalavi/NeuroStage",
+          "isAvailable": false,
+          "statusText": "Repository link will be activated once the codebase is published."
+        },
+        "liveDemo": {
+          "url": "",
+          "placeholder": "https://neurostage-demo.example.com",
+          "isAvailable": false,
+          "statusText": "Live interactive demo pending model hosting deployment."
+        }
+      }
+    },
+    {
+      "id": "advocate-advisory-system",
+      "title": "Advocate Advisory System",
+      "category": "Software Development",
+      "statusTag": "Full-Stack Application",
+      "disclaimer": "Software advisory management platform prototype. Not a substitute for licensed legal counsel.",
+      "shortDescription": "A software development project focused on an advocate advisory application.",
+      "visualTheme": "legal-tech",
+      "editableFields": {
+        "problemStatement": "[Editable Placeholder: Outline the case workflow management challenges faced by legal practitioners, including hearing calendars, document retrieval, and client advisory tracking.]",
+        "features": [
+          "[Editable Placeholder: Client consultation scheduling and case record dashboard]",
+          "[Editable Placeholder: Secure document cataloging and case note indexing]",
+          "[Editable Placeholder: Case status timeline and hearing notification tracker]"
+        ],
+        "myContribution": "[Editable Placeholder: Full-stack system architecture, database schema design, RESTful API endpoints implementation, and responsive React frontend components.]",
+        "technologyStack": [
+          "React.js",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "REST APIs",
+          "JWT Authentication"
+        ],
+        "architecture": "[Editable Placeholder: Client-server architecture separating UI presentation, Express controller routing, JWT auth middleware, and MongoDB document persistence.]",
+        "screenshots": [
+          {
+            "caption": "Dashboard Architecture Mockup",
+            "placeholder": true,
+            "path": "/assets/projects/advocate-dashboard-placeholder.svg"
+          }
+        ],
+        "limitations": "[Editable Placeholder: Currently implements core workflow prototypes. Third-party e-court APIs and cloud storage integration planned for next phase.]",
+        "github": {
+          "url": "",
+          "placeholder": "https://github.com/SandeshSalavi/Advocate-Advisory-System",
+          "isAvailable": false,
+          "statusText": "Repository link will be activated upon initial version release."
+        },
+        "liveDemo": {
+          "url": "",
+          "placeholder": "https://advocate-advisory.example.com",
+          "isAvailable": false,
+          "statusText": "Deployment link will be provided once production environment is configured."
+        }
+      }
+    }
+  ],
+  "achievements": {
+    "isConfigured": false,
+    "emptyMessage": "Certifications and verified credentials will be showcased here once completed. No unverified certifications or awards are listed.",
+    "items": []
+  }
+}

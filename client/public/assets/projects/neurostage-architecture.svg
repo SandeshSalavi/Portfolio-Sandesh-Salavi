@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#0b0f19"/>
+  <rect x="2" y="2" width="796" height="446" rx="14" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Title -->
+  <text x="40" y="48" fill="#e2e8f0" font-family="monospace" font-size="16" font-weight="700">NEUROSTAGE AI PIPELINE ARCHITECTURE</text>
+  <text x="40" y="70" fill="#64748b" font-family="monospace" font-size="12">EEG Polysomnography Signal Ingestion -> Preprocessing -> Model Inference</text>
+
+  <!-- Flow Boxes -->
+  <!-- Box 1: Raw Signal -->
+  <rect x="40" y="120" width="150" height="220" rx="12" fill="#141c30" stroke="#334155"/>
+  <text x="115" y="150" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="600" text-anchor="middle">1. EEG Ingestion</text>
+  <path d="M55,200 Q75,160 95,200 T135,200 T175,200" stroke="#38bdf8" stroke-width="2" fill="none"/>
+  <text x="115" y="240" fill="#94a3b8" font-family="monospace" font-size="11" text-anchor="middle">Multi-channel EEG</text>
+  <text x="115" y="260" fill="#64748b" font-family="monospace" font-size="10" text-anchor="middle">10-20 Electrode System</text>
+  <text x="115" y="280" fill="#64748b" font-family="monospace" font-size="10" text-anchor="middle">Fpz-Cz / Pz-Oz</text>
+
+  <!-- Arrow 1 -->
+  <path d="M195,230 L225,230" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="225,225 235,230 225,235" fill="#8b5cf6"/>
+
+  <!-- Box 2: Preprocessing -->
+  <rect x="240" y="120" width="150" height="220" rx="12" fill="#141c30" stroke="#334155"/>
+  <text x="315" y="150" fill="#818cf8" font-family="monospace" font-size="12" font-weight="600" text-anchor="middle">2. Preprocessing</text>
+  <rect x="255" y="180" width="120" height="26" rx="6" fill="#1e293b"/>
+  <text x="315" y="197" fill="#cbd5e1" font-family="monospace" font-size="10" text-anchor="middle">Bandpass (0.5-35Hz)</text>
+  <rect x="255" y="215" width="120" height="26" rx="6" fill="#1e293b"/>
+  <text x="315" y="232" fill="#cbd5e1" font-family="monospace" font-size="10" text-anchor="middle">30s Epoch Slicing</text>
+  <rect x="255" y="250" width="120" height="26" rx="6" fill="#1e293b"/>
+  <text x="315" y="267" fill="#cbd5e1" font-family="monospace" font-size="10" text-anchor="middle">Z-score Normalization</text>
+
+  <!-- Arrow 2 -->
+  <path d="M395,230 L425,230" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="425,225 435,230 425,235" fill="#8b5cf6"/>
+
+  <!-- Box 3: Model Architecture -->
+  <rect x="440" y="120" width="150" height="220" rx="12" fill="#141c30" stroke="#334155"/>
+  <text x="515" y="150" fill="#a855f7" font-family="monospace" font-size="12" font-weight="600" text-anchor="middle">3. Deep Learning</text>
+  <circle cx="480" cy="200" r="8" fill="#8b5cf6"/>
+  <circle cx="515" cy="190" r="8" fill="#3b82f6"/>
+  <circle cx="550" cy="200" r="8" fill="#06b6d4"/>
+  <circle cx="495" cy="235" r="8" fill="#a855f7"/>
+  <circle cx="535" cy="235" r="8" fill="#ec4899"/>
+  <line x1="480" y1="200" x2="495" y2="235" stroke="#475569" stroke-width="1.5"/>
+  <line x1="515" y1="190" x2="495" y2="235" stroke="#475569" stroke-width="1.5"/>
+  <line x1="515" y1="190" x2="535" y2="235" stroke="#475569" stroke-width="1.5"/>
+  <line x1="550" y1="200" x2="535" y2="235" stroke="#475569" stroke-width="1.5"/>
+  <text x="515" y="280" fill="#94a3b8" font-family="monospace" font-size="10" text-anchor="middle">1D-CNN + Temporal</text>
+  <text x="515" y="300" fill="#64748b" font-family="monospace" font-size="10" text-anchor="middle">Feature Fusion</text>
+
+  <!-- Arrow 3 -->
+  <path d="M595,230 L625,230" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="625,225 635,230 625,235" fill="#8b5cf6"/>
+
+  <!-- Box 4: Output Stages -->
+  <rect x="640" y="120" width="130" height="220" rx="12" fill="#141c30" stroke="#334155"/>
+  <text x="705" y="150" fill="#10b981" font-family="monospace" font-size="12" font-weight="600" text-anchor="middle">4. Stages</text>
+  <text x="705" y="185" fill="#cbd5e1" font-family="monospace" font-size="11" text-anchor="middle">Wake (W)</text>
+  <text x="705" y="210" fill="#cbd5e1" font-family="monospace" font-size="11" text-anchor="middle">N1 Stage</text>
+  <text x="705" y="235" fill="#cbd5e1" font-family="monospace" font-size="11" text-anchor="middle">N2 Stage</text>
+  <text x="705" y="260" fill="#cbd5e1" font-family="monospace" font-size="11" text-anchor="middle">N3 (Slow Wave)</text>
+  <text x="705" y="285" fill="#cbd5e1" font-family="monospace" font-size="11" text-anchor="middle">REM Stage</text>
+
+  <!-- Notice footer -->
+  <rect x="40" y="375" width="730" height="45" rx="8" fill="#1e1b4b" stroke="#4338ca"/>
+  <text x="405" y="402" fill="#c7d2fe" font-family="monospace" font-size="11" text-anchor="middle">
+    Research Prototype Notice: Designed for signal processing experiments. Not certified for diagnostic or clinical evaluation.
+  </text>
+</svg>
